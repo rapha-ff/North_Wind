@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_shippers
+    description: Dimensão de transportadoras da NorthWind. 
+    columns:
+      - name: shipper_id
+        description: a
+      - name: company_name
+        description: a
