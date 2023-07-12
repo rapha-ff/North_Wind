@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Dimensão de produtos da NorthWind
+    columns:
+      - name: product_id
+        description: a
+        tests:
+          - unique
+          - not_null
+          
+      - name: supplier_id
+        description: a
+      - name: category_id
+        description: a
+      - name: unit_price
+        description: a
+      - name: units_in_stock
+        description: a
+      - name: units_on_order
+        description: a
+      - name: quantity_per_unit
+        description: a
+      - name: product_name
+        description: a
+      - name: reorder_level
+        description: a
+      - name: is_discontinued
+        description: a
+      - name: category_name
+        description: a
+      - name: description
+        description: a
+      - name: company_name
+        description: a
+      - name: contact_name
+        description: a
+      - name: contact_title
+        description: a
+      - name: address
+        description: a
+      - name: city
+        description: a
+      - name: region
+        description: a
+      - name: postal_code
+        description: a
+      - name: country
+        description: a

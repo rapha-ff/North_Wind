@@ -1,0 +1,47 @@
+version: 2 
+
+models: 
+  - name: dim_employees
+    description: Dimensção de funcionários da NorthWind.
+    columns:
+      - name: employee_id
+        description: a
+        tests:
+          - unique
+          - not_null
+                        
+      - name: first_name
+        description: a
+
+      - name: last_name
+        description: a
+
+      - name: full_name
+        description: a
+
+      - name: management_full_name
+        description: a
+
+      - name: birth_date
+        description: a
+
+      - name: hire_date
+        description: a
+
+      - name: address
+        description: a
+
+      - name: city
+        description: a
+
+      - name: region
+        description: a
+
+      - name: postal_code
+        description: a
+
+      - name: country
+        description: a
+        
+      - name: notes
+        description: a

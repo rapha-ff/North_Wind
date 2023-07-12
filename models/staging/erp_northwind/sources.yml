@@ -18,3 +18,5 @@ sources:
         description: Tabela de categorias  
       - name: shippers
         description: Tabela de transportadores
+      - name: customers
+        description: Tabela de clientes
