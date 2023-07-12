@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: Dimensão de clientes da NorthWind 
+    columns:     
+      - name: company_name
+        description: a
+      - name: contact_name
+        description: a
+      - name: contact_title
+        description: a
+      - name: address
+        description: a
+      - name: city
+        description: a
+      - name: region
+        description: a
+      - name: postal_code
+        description: a
+      - name: country
+        description: a
