@@ -20,3 +20,7 @@ sources:
         description: Tabela de transportadores
       - name: customers
         description: Tabela de clientes
+      - name: orders
+        description: Tabela de ordens
+      - name: order_details
+        description: Tabela de ordens com pedidos

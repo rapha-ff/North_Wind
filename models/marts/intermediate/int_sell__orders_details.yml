@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: int_sell__orders_details
+    description: Tabela intermediária da fato Vendas
+    columns: 
+      - name: surrogate_key
+        description: Chave surrogate da tabela intermediária
+        tests:
+          - unique
+          - not_null    
+        
+      - name: order_id
+        description: a
+        
+      - name: product_id
+        description: a
+        
+      - name: customer_id
+        description: a
+        
+      - name: employee_id
+        description: a
+        
+      - name: ship_id
+        description: a
+        
+      - name: unit_price
+        description: a
+        
+      - name: quantity
+        description: a
+        
+      - name: discount
+        description: a
+        
+      - name: freight
+        description: a
+        
+      - name: order_date
+        description: a
+        
+      - name: required_date
+        description: a
+        
+      - name: shipped_date
+        description: a
+        
+      - name: ship_name
+        description: a
+        
+      - name: ship_address
+        description: a
+        
+      - name: ship_city
+        description: a
+        
+      - name: ship_region
+        description: a
+        
+      - name: ship_postal_code
+        description: a
+        
+      - name: ship_country
+        description: a
+        

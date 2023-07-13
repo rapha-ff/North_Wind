@@ -5,7 +5,7 @@ with
             , cast(reports_to as int) as management_id
             , cast(last_name as string) as last_name
             , cast(first_name as string) as first_name
-            , cast(first_name || ' ' || last_name as string) as full_name
+            , cast(first_name || ' ' || last_name as string) as employee_full_name
             --, title
             --, title_of_courtesy
             , cast(birth_date as date) as birth_date

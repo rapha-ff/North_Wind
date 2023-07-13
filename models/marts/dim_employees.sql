@@ -16,8 +16,8 @@ with
         employees.employee_id
         , employees.first_name
         , employees.last_name
-        , employees.full_name
-        , managements.full_name as management_full_name
+        , employees.employee_full_name 
+        , managements.employee_full_name as management_full_name
         , employees.birth_date
         , employees.hire_date
         , employees.address
