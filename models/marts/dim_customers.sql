@@ -1,7 +1,8 @@
 with
     customers as (
         select 
-        company_name
+        customer_id
+        , company_name
         , contact_name
         , contact_title
         , address
