@@ -1,26 +1,31 @@
 sources:
   - name: erp
     schema: erp_northwind
-    description: Fonte de dados de vendas do SAP Northwind
+    description: Fonte de dados de vendas do SAP Northwind.
     tables:
       - name: employees
-        description: Tabela de funcionários
+        description: Tabela de funcionários.
         columns:
           - name: employee_id
             tests:
               - unique
               - not_null
       - name: products
-        description: Tabela de produtos
+        description: Tabela de produtos.
+
       - name: suppliers
-        description: Tabela de fornecedores            
+        description: Tabela de fornecedores.  
+
       - name: categories
-        description: Tabela de categorias  
+        description: Tabela de categorias dos produtos.
+
       - name: shippers
-        description: Tabela de transportadores
+        description: Tabela de transportadoras.
+
       - name: customers
-        description: Tabela de clientes
+        description: Tabela de clientes.
+
       - name: orders
-        description: Tabela de ordens
+        description: Tabela de ordens.
       - name: order_details
-        description: Tabela de ordens com pedidos
+        description: Tabela de ordens com pedidos.

@@ -4,7 +4,11 @@ models:
   - name: dim_shippers
     description: Dimensão de transportadoras da NorthWind. 
     columns:
-      - name: shipper_id
-        description: a
+      - name: ship_id
+        description: Chave única que caracteriza as transportadoras.
+        tests:
+          - unique
+          - not_null
+                            
       - name: company_name
-        description: a
+        description: Nome das transportadoras.

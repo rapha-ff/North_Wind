@@ -20,12 +20,10 @@ with
         , managements.employee_full_name as management_full_name
         , employees.birth_date
         , employees.hire_date
-        , employees.address
         , employees.city
         , employees.region
         , employees.postal_code
         , employees.country
-        , employees.notes
         from employees
         left join managements 
         on employees.management_id = managements.employee_id

@@ -1,0 +1,1 @@
+Criar um teste para a coluna unit price na dim_products de que ela não pode ser negativa 
