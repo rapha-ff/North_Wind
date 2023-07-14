@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: Dimensão de data 
+    columns:
+      - name: date_day
+        description: a
+        
+      - name: day_of_week
+        description: a
+        
+      - name: day_of_week_name
+        description: a
+        
+      - name: day_of_month
+        description: a
+        
+      - name: day_of_year
+        description: a
+        
+      - name: week_of_year
+        description: a
+        
+      - name: month_of_year
+        description: a
+        
+      - name: month_name
+        description: a
+        
+      - name: quarter_of_year
+        description: a
+        
+      - name: year_number
+        description: a
+
+
+

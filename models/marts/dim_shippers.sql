@@ -1,7 +1,7 @@
 with 
     shippers as (
         select 
-        shipper_id
+        ship_id
         , company_name
         from {{ ref('stg_erp__shippers') }}
     )

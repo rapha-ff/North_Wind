@@ -51,3 +51,6 @@ with
         left join products using(product_id)
         left join shippers using(ship_id)
     )
+
+select *
+from join_fact
