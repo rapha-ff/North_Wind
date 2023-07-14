@@ -2,65 +2,80 @@ version: 2
 
 models:
   - name: int_sell__orders_details
-    description: Tabela intermediária da fato Vendas
+    description: Tabela intermediária da fato Vendas.
     columns: 
       - name: surrogate_key
-        description: Chave surrogate da tabela intermediária
+        description: Chave surrogate da tabela intermediária.
         tests:
           - unique
           - not_null    
         
       - name: order_id
-        description: a
+        description: Chave única que caracteriza uma ordem de compra.
+        tests:
+          - unique
+          - not_null  
         
       - name: product_id
-        description: a
+        description: Chave única que caracteriza os produtos.
+        tests:
+          - unique
+          - not_null  
         
       - name: customer_id
-        description: a
+        description: Chave única que caracteriza os clientes.
+        tests:
+          - unique
+          - not_null          
         
       - name: employee_id
-        description: a
+        description: Chave única que caracteriza os funcionários.
+        tests:
+          - unique
+          - not_null          
         
       - name: ship_id
-        description: a
+        description: Chave única que caracteriza as transportadoras.
+        tests:
+          - unique
+          - not_null          
         
       - name: unit_price
-        description: a
+        description: Preço de uma unidade do produto.
         
       - name: quantity
-        description: a
+        description: Quantidade de um pedido em uma ordem de compra.
         
       - name: discount
-        description: a
+        description: Disconto em porcentagem em um pedido em uma ordem de compra. 
         
       - name: freight
-        description: a
+        description: Frete de uma ordem de compra.
         
       - name: order_date
-        description: a
+        description: Dia em que a ordem de compra foi recebida.
         
       - name: required_date
-        description: a
+        description: Dia em que o cliente precisa desse produto. 
         
       - name: shipped_date
-        description: a
+        description: Dia em que os produtos foram embarcadas rumo ao cliente. 
         
       - name: ship_name
-        description: a
+        description: Nome da transportadora responsável pelo frete. 
         
       - name: ship_address
-        description: a
+        description: Endereço do cliente.
         
       - name: ship_city
-        description: a
+        description: Cidade do cliente.
         
       - name: ship_region
-        description: a
+        description: Região do cliente.
         
       - name: ship_postal_code
-        description: a
+        description: Código postal do cliente. 
         
       - name: ship_country
-        description: a
+        description: Páis do cliente.
         
