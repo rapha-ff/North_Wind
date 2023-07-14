@@ -2,49 +2,73 @@ version: 2
 
 models:
   - name: dim_products
-    description: Dimensão de produtos da NorthWind
+    description: Dimensão de produtos da NorthWind.
     columns:
       - name: product_id
-        description: a
+        description: Chave única que caracteriza os produtos.
         tests:
           - unique
           - not_null
           
       - name: supplier_id
-        description: a
+        description: Chave única que caracteriza os fornecedores.
+        tests:
+          - unique
+          - not_null
+          
       - name: category_id
-        description: a
+        description: Chave única que caracteriza as categorias.
+        tests:
+          - unique
+          - not_null
+          
       - name: unit_price
-        description: a
+        description: Preço de uma unidade do produto.
+
       - name: units_in_stock
-        description: a
+        description: Quantidade de unidades do produto em estoque.
+
       - name: units_on_order
-        description: a
+        description: Quantidade de unidades do produto na ordem de compra.
+
       - name: quantity_per_unit
-        description: a
+        description: Quantos produtos compoem uma unidade de venda do produto.
+
       - name: product_name
-        description: a
+        description: Nome do produto.
+
       - name: reorder_level
-        description: a
+        description: Estoque mínimo que libera a reposição de estoque do produto.
+
       - name: is_discontinued
-        description: a
+        description: Indica se o produto continua sendo comercializado pela companhia.
+
       - name: category_name
-        description: a
+        description: Nome da categoria do produto.
+
       - name: description
-        description: a
+        description: Descrição da categoria do produto.
+
       - name: company_name
-        description: a
+        description: Nome do fornecedor do produto.
+
       - name: contact_name
-        description: a
+        description: Nome da pessoa responsável que mantemos contato na empresa fornecedora do produto.
+
       - name: contact_title
-        description: a
+        description: Cargo da pessoa responsável que mantemos contato na empresa fornecedora do produto.
+
       - name: address
-        description: a
+        description: Endereço da empresa fornecedora do produto.
+
       - name: city
-        description: a
+        description: Cidade da empresa fornecedora do produto.
+
       - name: region
-        description: a
+        description: Região da empresa fornecedora do produto.
+
       - name: postal_code
-        description: a
+        description: Código postal da empresa fornecedora do produto.
+
       - name: country
-        description: a
+        description: País da empresa fornecedora do produto.

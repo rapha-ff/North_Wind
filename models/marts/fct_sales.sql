@@ -24,6 +24,11 @@ with
         from {{ ref('int_sell__orders_details') }}
     )
 
+    , dates as (
+        select *
+        from {{ ref('dim_date') }}
+    )
+
     , join_fact as (
         select 
             sell_orders.surrogate_key

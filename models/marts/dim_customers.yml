@@ -4,19 +4,32 @@ models:
   - name: dim_customers
     description: Dimensão de clientes da NorthWind 
     columns:     
+      - name: customer_id
+        description: Chave única que caracteriza os clientes.
+        tests:
+          - unique
+          - not_null
+          
       - name: company_name
-        description: a
+        description: Nome da companhia cliente.
+
       - name: contact_name
-        description: a
+
+        description: Nome da pessoa responsável que mantemos contato na empresa cliente.
       - name: contact_title
-        description: a
+
+        description: Cargo da pessoa responsável que mantemos contato na empresa cliente.
       - name: address
-        description: a
+
+        description: Endereço da empresa cliente.
       - name: city
-        description: a
+
+        description: Cidade da empresa cliente.
       - name: region
-        description: a
+
+        description: Região da empresa cliente.
       - name: postal_code
-        description: a
+      
+        description: Código postal da empresa cliente.
       - name: country
-        description: a
+        description: País da empresa cliente.

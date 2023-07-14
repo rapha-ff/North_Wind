@@ -10,7 +10,7 @@ with
             --, title_of_courtesy
             , cast(birth_date as date) as birth_date
             , cast(hire_date as date) as hire_date
-            , cast(address as string) as address
+            ---, address 
             , cast(city as string) as city
             , cast(region as string) as region
             , cast(postal_code as string) as postal_code
@@ -18,7 +18,7 @@ with
             --, home_phone
             --, extension
             --, photo
-            , cast(notes as string) as notes
+            --, notes
             --, photo_path
         from {{ source('erp', 'employees') }}
     )

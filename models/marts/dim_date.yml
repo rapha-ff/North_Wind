@@ -2,37 +2,40 @@ version: 2
 
 models:
   - name: dim_date
-    description: Dimensão de data 
+    description: Dimensão de data.
     columns:
       - name: date_day
-        description: a
-        
+        description: Dia no formato ano-mês-dia.
+        tests:
+          - unique
+          - not_null
+                  
       - name: day_of_week
-        description: a
+        description: Número da semana, começando em 1 no domingo (Sunday).
         
       - name: day_of_week_name
-        description: a
+        description: Nome da semana em inglês.
         
       - name: day_of_month
-        description: a
+        description: Dia do mês.
         
       - name: day_of_year
-        description: a
+        description: Dia do ano.
         
       - name: week_of_year
-        description: a
+        description: Semana do ano.
         
       - name: month_of_year
-        description: a
+        description: Mês do ano.
         
       - name: month_name
-        description: a
+        description: Nome do mês em inglês. 
         
       - name: quarter_of_year
-        description: a
+        description: Trimestre do ano.
         
       - name: year_number
-        description: a
+        description: Ano.
 
 
 

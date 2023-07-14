@@ -5,43 +5,38 @@ models:
     description: Dimensção de funcionários da NorthWind.
     columns:
       - name: employee_id
-        description: a
+        description: Chave única que caracteriza os funcionários. 
         tests:
           - unique
           - not_null
                         
       - name: first_name
-        description: a
+        description: Primeiro nome do funcionário. 
 
       - name: last_name
-        description: a
+        description: Último nome do funcionário. 
 
       - name: full_name
-        description: a
+        description: Nome completo do funcionário.
 
       - name: management_full_name
-        description: a
+        description: Nome completo do gerente do funcionário. 
 
       - name: birth_date
-        description: a
+        description: Data de nascimento do funcionário.
 
       - name: hire_date
-        description: a
-
-      - name: address
-        description: a
+        description: Data de contratação do funcionário. 
 
       - name: city
-        description: a
+        description: Cidade de residência do funcionário.
 
       - name: region
-        description: a
+        description: Região de residência do funcionário.
 
       - name: postal_code
-        description: a
+        description: Código postar da residência do funcionário.
 
       - name: country
-        description: a
+        description: País de residência do funcionário.
         
-      - name: notes
-        description: a
