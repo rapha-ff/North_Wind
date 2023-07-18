@@ -62,6 +62,7 @@ with
         left join customers using(customer_id)
         left join products using(product_id)
         left join shippers using(ship_id)
+        left join dates on sell_orders.order_date = dates.date_day
     )
 
     , metrics as (
