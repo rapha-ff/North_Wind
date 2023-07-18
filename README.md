@@ -1,57 +1,24 @@
-Bem-vindo ao projeto demo da Northwind!
+### Bem-vindo ao projeto da NorthWind desnormalizado no esquema em estrela
 
 ### O que é este projeto?
 
-Este projeto é um projeto exemplo de conceitos do dbt usando os dados da Northwind.
+Este projeto onde apliquei os conhecimentos aprendidos no curso de analytics engineering da Indicium. 
+O banco de dados utilizado foi o da Northwind. 
 
-### Usando o projeto
+### Como foi feito o projeto
 
-1. Para iniciar o projeto você vai precisar ter o dbt instalado no seu computador conforme as instruções neste [link](https://docs.getdbt.com/docs/installation) ou utilizando o [dbt cloud](https://cloud.getdbt.com/).
+1. Foi feito a injestão dos dados para o data warehouse a partir do comando `dbt seed` (prática não recomendada em projetos reais, somente usada aqui para fins educacionais).
 
-2. Clone este repositório
+2. Foi feita uma análise do banco por meio de linguagem SQL para melhor entendimento do modelo ER.
    
-3. Acesse o repositório:
+3. A ferramenta DBT foi utilizada para passar os dados de normalizados para desnormalizados no esquema estrela.
 
-```
-cd academy-2022-11
-```
+4. Foi feita a documentação da base dos dados.
 
-4. Você deverá configurar um *profile* para o seu DW adicionando o seguinte trecho de código no arquivo `~/.dbt/profiles.yml` (lembre-se de alterar as variáveis específicas para seu projeto):
+5. Testes genéricos e singulares foram criados para simular uma aplicação real de ingestão de dados. 
 
-```yaml
-northwind:
-  outputs:
-    dev:
-      dataset: northwind
-      job_execution_timeout_seconds: 300
-      job_retries: 1
-      keyfile: path/to/keyfile.json
-      location: US
-      method: service-account
-      priority: interactive
-      project: <project_id>
-      threads: 1
-      type: bigquery
-```
+### Considerações
 
-5. Em seguida, teste se a configuração está correta:
-
-```bash
-dbt debug
-
-(...)
-  Connection test: [OK connection ok]
-
-All checks passed!
-```
-
-1. (opcional) Se você não fez a ingestão dos dados brutos para o data warehouse, pode fazê-lo utilizando o `dbt seed` (esta prática não é recomendada em projetos reais, somente usada aqui para fins educacionais):
-
-```
-dbt seed
-```
-
-Pronto! Você tem um projeto dbt configurado e com dados disponíveis no Data Warehouse.
-
-### Saiba mais:
-- Aprenda mais sobre o dbt [na documentação oficial](https://docs.getdbt.com/docs/introduction)
+📄 Espero que esse modelo possa ajudar quem está começando na modelagem de dados.
+📖 Agradeço a Indicium por ter me ajudado na jornada de conhecimento.
+💡 Caso veja alguma melhoria no projeto não hesite em entrar em contato comigo!
