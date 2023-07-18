@@ -20,5 +20,7 @@ O banco de dados utilizado foi o da Northwind.
 ### Considerações
 
 📄 Espero que esse modelo possa ajudar quem está começando na modelagem de dados.
+
 📖 Agradeço a Indicium por ter me ajudado na jornada de conhecimento.
+
 💡 Caso veja alguma melhoria no projeto não hesite em entrar em contato comigo!
