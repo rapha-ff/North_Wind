@@ -2,7 +2,7 @@
 
 ### O que é este projeto?
 
-Neste projeto apliquei os conhecimentos aprendidos no curso de analytics engineering da Indicium. 
+Neste projeto apliquei os conhecimentos aprendidos no curso de analytics engineer da Indicium. 
 
 O banco de dados utilizado foi o da Northwind. 
 
