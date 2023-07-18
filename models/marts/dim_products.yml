@@ -13,13 +13,11 @@ models:
       - name: supplier_id
         description: Chave única que caracteriza os fornecedores.
         tests:
-          - unique
           - not_null
           
       - name: category_id
         description: Chave única que caracteriza as categorias.
         tests:
-          - unique
           - not_null
           
       - name: unit_price
