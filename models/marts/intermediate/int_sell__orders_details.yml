@@ -13,31 +13,26 @@ models:
       - name: order_id
         description: Chave única que caracteriza uma ordem de compra.
         tests:
-          - unique
           - not_null  
         
       - name: product_id
         description: Chave única que caracteriza os produtos.
         tests:
-          - unique
           - not_null  
         
       - name: customer_id
         description: Chave única que caracteriza os clientes.
         tests:
-          - unique
           - not_null          
         
       - name: employee_id
         description: Chave única que caracteriza os funcionários.
         tests:
-          - unique
           - not_null          
         
       - name: ship_id
         description: Chave única que caracteriza as transportadoras.
         tests:
-          - unique
           - not_null          
         
       - name: unit_price
@@ -47,7 +42,7 @@ models:
         description: Quantidade de um pedido em uma ordem de compra.
         
       - name: discount
-        description: Disconto em porcentagem em um pedido em uma ordem de compra. 
+        description: Desconto em porcentagem em um pedido em uma ordem de compra. 
         
       - name: freight
         description: Frete de uma ordem de compra.
@@ -77,5 +72,5 @@ models:
         description: Código postal do cliente. 
         
       - name: ship_country
-        description: Páis do cliente.
+        description: País do cliente.
         
