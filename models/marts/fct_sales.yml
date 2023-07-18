@@ -1,0 +1,106 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: Tabela fato das ordens de pedidos para a NorthWind
+    columns:
+      - name: sk_orders
+        description: Chave única que caracteriza os produtos por order de compra. 
+        
+      - name: order_id
+        description: Chave única que caracteriza uma ordem de compra.
+        
+      - name: fk_employee
+        description: Chave única que caracteriza os funcionários. 
+        
+      - name: fk_customer
+        description: Chave única que caracteriza os clientes. 
+        
+      - name: fk_product
+        description: Chave única que caracteriza os produtos. 
+        
+      - name: fk_shippers
+        description: Chave única que caracteriza as transportadoras.
+
+      - name: unit_price
+        description: Preço de uma unidade do produto. 
+        
+      - name: unit_price_with_freight
+        description: Preço de uma unidade do produto acrescido do frete freight_per_product dividido pela quantidade de produtos comprados. 
+
+      - name: quantity
+        description: Quantidade de um pedido em uma ordem de compra.
+        
+      - name: gross_income
+        description: Quantidade de produtos vezes o valor. 
+        
+      - name: discount
+        description: Desconto em porcentagem em um pedido em uma ordem de compra. 
+        
+      - name: net_income
+        description: Quantidade de produtos vezes o valor menos a desconto percentual.  
+        
+      - name: total_discount
+        description: gross_income menos o net_income representando o valor do desconto por produto por ordem de compra.  
+        
+      - name: freight_per_product
+        description: Valor do frete dividido pelos tipos de produtos em uma mesma ordem de compra. 
+        
+      - name: time_to_ship
+        description: Tempo desde o recebimento da ordem de compra até a entrega para a transportadora. 
+        
+      - name: shipped_to_required
+        description: Tempo desde a entrega a transportadora até o tempo que o cliente deseja o pedido. 
+        
+      - name: order_to_required
+        description: Tempo desde o recebimento da ordem de compra até o tempo que o cliente deseja o pedido. 
+        
+      - name: shipped_category
+        description: Categoria criada com os três periodos de tempo existentes no order_to_required. O 'Slow' tem o valor de 42 dias, 'Normal' tem o valor de 28 dias e o "Fast" de 18 dias. 
+        
+      - name: order_date
+        description: Dia em que a ordem de compra foi recebida. 
+        
+      - name: required_date
+        description: Dia em que o cliente precisa desse produto. 
+        
+      - name: shipped_date
+        description: Dia em que os produtos foram embarcadas rumo ao cliente. 
+        
+      - name: ship_name
+        description: Nome da transportadora responsável pelo frete. 
+        
+      - name: ship_address
+        description: Endereço do cliente. 
+        
+      - name: ship_city
+        description: Cidade do cliente. 
+        
+      - name: ship_region
+        description: Região do cliente. 
+        
+      - name: ship_postal_code
+        description: Código postal do cliente. 
+        
+      - name: ship_country
+        description: País do cliente. 
+        
+      - name: employee_full_name
+        description: Nome completo do funcionário. 
+        
+      - name: management_full_name
+        description: Nome completo do gerente do funcionário. 
+        
+      - name: product_name
+        description: Nome do produto. 
+        
+      - name: category_name
+        description: Nome da categoria do produto. 
+        
+      - name: company_name
+        description: Nome do fornecedor do produto. 
+        
+      - name: is_discontinued 
+        description: Indica se o produto continua sendo comercializado pela companhia. 
+        
+      

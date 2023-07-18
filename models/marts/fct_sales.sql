@@ -32,11 +32,11 @@ with
     , join_fact as (
         select 
             sell_orders.surrogate_key
-            , sell_orders.order_id
             , employees.employee_id
             , customers.customer_id
             , products.product_id
             , shippers.ship_id
+            , sell_orders.order_id
             , sell_orders.unit_price
             , sell_orders.quantity
             , sell_orders.discount
@@ -73,18 +73,24 @@ with
         , (unit_price * quantity * discount) as total_discount
         , (unit_price + round((freight/(count(*) over(partition by order_id))/quantity),2)) as unit_price_with_freight
         , date_diff(shipped_date, order_date, day) as time_to_ship
-        , date_diff(required_date, shipped_date, day) as ship_to_required
+        , date_diff(required_date, shipped_date, day) as shipped_to_required
+        , date_diff(required_date, order_date, day) as order_to_required
+        , case 
+            when date_diff(required_date, order_date, day) = 14 then "Fast"
+            when date_diff(required_date, order_date, day) = 28 then "Normal"
+            when date_diff(required_date, order_date, day) = 42 then "Slow"
+            else "" end as shipped_category   
         from join_fact
     )
 
     , final_select as (
         select
-            surrogate_key
+            surrogate_key as sk_orders
+            , employee_id as fk_employee
+            , customer_id as fk_customer
+            , product_id as fk_product
+            , ship_id as fk_shippers
             , order_id
-            , employee_id
-            , customer_id
-            , product_id
-            , ship_id
 
             , unit_price
             , unit_price_with_freight
@@ -95,7 +101,9 @@ with
             , total_discount
             , freight_per_product
             , time_to_ship
-            , ship_to_required
+            , shipped_to_required
+            , order_to_required
+            , shipped_category
 
             , order_date
             , required_date
@@ -118,4 +126,3 @@ with
 
 select *
 from final_select
-order by ship_to_required
