@@ -1,4 +1,4 @@
-### Bem-vindo ao projeto da NorthWind desnormalizado no esquema em estrela
+### Bem-vindo ao projeto da NorthWind desnormalizado no esquema estrela
 
 ### O que é este projeto?
 
